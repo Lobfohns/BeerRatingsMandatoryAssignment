@@ -15,6 +15,7 @@ public class Beers {
 
     @GetMapping("/beers")
     public Iterable<Beer> getBeers(){
+        System.out.println("hej jon");
         return beers.findAll();
     }
 
